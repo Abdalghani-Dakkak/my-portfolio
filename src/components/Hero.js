@@ -29,7 +29,7 @@ const Hero = () => {
         >
           <div className="relative w-full h-full bg-slate-900 rounded-full">
             <Image
-              src="/profile.jpg"
+              src="/images/profile.jpg"
               alt="Abdalghani Dakkak Profile Photo"
               layout="fill"
               objectFit="cover"

@@ -33,7 +33,11 @@ const Projects = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.3 }}
-            className="bg-white/5 p-4 rounded-lg border border-white/10 group backdrop-blur-xs"
+            className="
+              group bg-white/5 p-4 rounded-lg border border-white/10
+              backdrop-blur-xs transition-all duration-300
+            hover:border-teal-400/50 hover:bg-white/10
+            "
           >
             <div className="relative h-52 w-full rounded-md overflow-hidden mb-4">
               <Image

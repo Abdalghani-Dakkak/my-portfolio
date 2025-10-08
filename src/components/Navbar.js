@@ -54,7 +54,7 @@ const Navbar = () => {
             </a>
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 z-50 text-white"
+              className="p-2 z-50 text-white cursor-pointer"
             >
               {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
             </motion.button>
