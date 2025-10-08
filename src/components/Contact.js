@@ -29,9 +29,9 @@ const Contact = () => {
         <a
           href="mailto:abdalghanidakkak@gmail.com"
           className="
-                inline-block bg-teal-500 text-white font-bold px-8 py-3 rounded-full
-              hover:bg-teal-600 transition-all duration-300
-        "
+            inline-block bg-teal-500 text-white font-bold px-8 py-3
+            rounded-full hover:bg-teal-600 transition-all duration-300
+          "
         >
           Say Hello
         </a>
