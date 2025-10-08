@@ -19,7 +19,7 @@ const Contact = () => {
         }}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <h2 className="text-3xl font-bold text-white mb-4">Get In Touch</h2>
         <p className="text-lg text-gray-300 max-w-md mx-auto mb-8">
