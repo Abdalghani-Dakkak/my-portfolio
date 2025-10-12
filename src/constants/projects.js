@@ -13,7 +13,7 @@ export const projects = [
       "A responsive portfolio website focused on smooth animations and interactive elements to create a professional showcase.",
     image: "/images/projects/motion-graphic-portfolio.png",
     tags: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "https://abdalghani-dakkak.github.io/Motion-Graphics-Portfolio/",
+    liveUrl: null,
     githubUrl: "https://github.com/Abdalghani-Dakkak/Motion-Graphics-Portfolio",
   },
   {
@@ -22,7 +22,7 @@ export const projects = [
       "A full-featured movie database application using Next.js with external API integration, dynamic routing, and server-side rendering.",
     image: "/images/projects/imdb-clone.png",
     tags: ["Next.js", "TailwindCSS"],
-    liveUrl: "imdb-clone-nextjs-project.vercel.app/",
+    liveUrl: "https://imdb-clone-nextjs-project.vercel.app/",
     githubUrl: "https://github.com/Abdalghani-Dakkak/IMDb-Clone",
   },
   {
