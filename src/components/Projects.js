@@ -46,6 +46,7 @@ const Projects = () => {
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
           >
             <div
               className="
