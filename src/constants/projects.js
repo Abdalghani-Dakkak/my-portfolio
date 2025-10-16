@@ -12,9 +12,9 @@ export const projects = [
     description:
       "A responsive portfolio website focused on smooth animations and interactive elements to create a professional showcase.",
     image: "/images/projects/motion-graphic-portfolio.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    liveUrl: null,
-    githubUrl: "https://github.com/Abdalghani-Dakkak/Motion-Graphics-Portfolio",
+    tags: ["Next.js", "TailwindCSS"],
+    liveUrl: "https://motion-graphic-portfolio.netlify.app/",
+    githubUrl: "https://github.com/Abdalghani-Dakkak/motion-graphic-portfolio",
   },
   {
     title: "IMDb Clone",
