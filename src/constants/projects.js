@@ -34,4 +34,13 @@ export const projects = [
     liveUrl: null,
     githubUrl: "https://github.com/Abdalghani-Dakkak/Foodies-App",
   },
+  {
+    title: "Solar System",
+    description:
+      "An interactive 3D Solar System simulation built with Three.js, showcasing planets orbiting dynamically in a visually immersive space environment.",
+    image: "/images/projects/solar-system.png",
+    tags: ["Three.js"],
+    liveUrl: "https://abdalghani-dakkak.github.io/Solar-System/",
+    githubUrl: "https://github.com/Abdalghani-Dakkak/Solar-System",
+  },
 ];

@@ -7,7 +7,6 @@ import {
   SiNextdotjs,
   SiSvelte,
   SiExpo,
-  SiNodedotjs,
   SiBootstrap,
   SiTailwindcss,
   SiRedux,
@@ -17,6 +16,7 @@ import {
   SiVite,
   SiWebpack,
   SiWordpress,
+  SiThreedotjs,
 } from "react-icons/si";
 
 import ZustandIcon from "@/icons/zustandIcon";
@@ -52,10 +52,6 @@ export const skills = [
   },
   { name: "Expo", icon: <SiExpo size={iconSize} /> },
   {
-    name: "Node.js",
-    icon: <SiNodedotjs size={iconSize} className="text-green-500" />,
-  },
-  {
     name: "Bootstrap",
     icon: <SiBootstrap size={iconSize} className="text-purple-500" />,
   },
@@ -74,6 +70,10 @@ export const skills = [
   {
     name: "React Query",
     icon: <SiReactquery size={iconSize} className="text-red-500" />,
+  },
+  {
+    name: "Three.js",
+    icon: <SiThreedotjs size={iconSize} className="text-white" />,
   },
   { name: "Git", icon: <SiGit size={iconSize} className="text-orange-600" /> },
   { name: "Github", icon: <SiGithub size={iconSize} /> },
