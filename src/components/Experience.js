@@ -1,12 +1,17 @@
 "use client";
 
-// import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-// import { useInView } from "react-intersection-observer";
 
 import { experience } from "@/constants/experience";
 
-const ExperienceCard = ({ role, company, location, date, description }) => (
+const ExperienceCard = ({
+  role,
+  company,
+  location,
+  date,
+  projects,
+  description,
+}) => (
   <div
     className="
       p-6 rounded-lg border border-white/10 
@@ -19,9 +24,21 @@ const ExperienceCard = ({ role, company, location, date, description }) => (
     <p className="text-md font-semibold text-gray-300 mb-4">
       {company} | {location}
     </p>
-    <ul className="list-disc list-inside text-gray-400 space-y-2">
-      {description.map((point, i) => (
-        <li key={i}>{point}</li>
+    {projects && (
+      <p className="text-md text-gray-300 mb-4">
+        <span className="text-lg font-semibold">Projects: </span> {projects.join(" – ")}
+      </p>
+    )}
+    <ul className="text-gray-400 space-y-5">
+      {description.map((project) => (
+        <li key={`${project.projectName}`}>
+          <h2 className="font-bold">{project.projectName}</h2>
+          <ul className="list-disc list-inside text-gray-400 space-y-2">
+            {project.points.map((point, i) => (
+              <li key={`point_${i}`}>{point}</li>
+            ))}
+          </ul>
+        </li>
       ))}
     </ul>
   </div>
@@ -37,53 +54,11 @@ const itemVariants = {
 };
 
 const AnimatedExperienceItem = ({ exp, index }) => {
-  // const controls = useAnimation();
-
-  // const [ref, , entry] = useInView({
-  //   threshold: [0, 0.05, 0.45],
-  //   triggerOnce: false,
-  //   rootMargin: "0px 0px -5% 0px",
-  // });
-
-  // const timerRef = useRef(null);
-  // const ENTER = 0.45;
-  // const EXIT = 0.05;
-  // const RESET_DELAY_MS = 60;
-
-  // useEffect(() => {
-  //   if (!entry) return;
-
-  //   const ratio = entry.intersectionRatio;
-
-  //   if (ratio >= ENTER) {
-  //     clearTimeout(timerRef.current);
-  //     controls.stop();
-  //     controls.set("hidden");
-  //     requestAnimationFrame(() => controls.start("visible"));
-  //     return;
-  //   }
-
-  //   if (ratio <= EXIT) {
-  //     clearTimeout(timerRef.current);
-  //     timerRef.current = setTimeout(() => {
-  //       controls.stop();
-  //       controls.set("hidden");
-  //     }, RESET_DELAY_MS);
-  //     return;
-  //   }
-  // }, [entry, controls]);
-
-  // useEffect(() => {
-  //   return () => clearTimeout(timerRef.current);
-  // }, []);
-
   return (
     <motion.div
-      // ref={ref}
       variants={itemVariants}
       initial="hidden"
       whileInView="visible"
-      // animate={controls}
       viewport={{ once: true, amount: 0.3 }}
       className="relative pl-8 md:pl-0 md:flex md:items-center"
     >
