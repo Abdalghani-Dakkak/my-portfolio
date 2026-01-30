@@ -1,5 +1,30 @@
 export const experience = [
   {
+    role: "Front-End Developer",
+    company: "ATCC",
+    location: "Kuwait, Kuwait (Remote)",
+    date: "Nov 2025 - Present",
+    projects: [
+      "Tiny Closet",
+      "Abby",
+      "Dozzie",
+      "United E-Commerce",
+      "United Informative",
+      "ATCC Portfolio",
+    ],
+    description: [
+      {
+        projectName: null,
+        points: [
+          "Contributed to three Laravel-based e-commerce platforms (Tiny Closet, Abby, Dozzie), improving UI, features, and Blade templates.",
+          "Built and improved frontend pages for United, an e-commerce platform developed with Laravel and Tailwind CSS.",
+          "Built a modern ATCC corporate portfolio using Next.js, Tailwind CSS, and AOS, connected to a dashboard for dynamic content management.",
+          "Developed a professional United company portfolio using Next.js, Tailwind CSS, and GSAP, fully integrated with an admin dashboard for content control.",
+        ],
+      },
+    ],
+  },
+  {
     role: "Front-End Engineer",
     company: "iSoft Land Inc",
     location: "California, USA (Remote)",

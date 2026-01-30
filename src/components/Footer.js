@@ -14,6 +14,39 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 
+const contactInfo = {
+  phone: "+963 992 528 376",
+  email: "abdalghanidakkak@gmail.com",
+}
+
+const socialMedia = [
+  {
+    id: 1,
+    name: "GitHub",
+    href: "https://github.com/Abdalghani-Dakkak",
+    icon: <FaGithub size={28} />,
+  },
+  {
+    id: 2,
+    name: "LinkedIn",
+    href: "https://linkedin.com/in/abdalghani-dakkak",
+    icon: <FaLinkedin size={28} />,
+  },
+  {
+    id: 3,
+    name: "Telegram",
+    href: "https://t.me/Abdalghanidakkak",
+    icon: <FaTelegram size={28} />,
+  },
+  {
+    id: 4,
+    name: "WhatsApp",
+    // href: "https://wa.me/963992528376",
+    href: "https://wa.me/963985281451",
+    icon: <FaWhatsapp size={28} />,
+  },
+]
+
 const Footer = () => {
   const footerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -76,18 +109,18 @@ const Footer = () => {
             className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-gray-300"
           >
             <a
-              href="tel:+963992528376"
+              href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
               className="flex items-center gap-2 hover:text-teal-300 transition-colors"
             >
               <FaPhone />
-              <span>+963 992 528 376</span>
+              <span>{contactInfo.phone}</span>
             </a>
             <a
-              href="mailto:abdalghanidakkak@gmail.com"
+              href={`mailto:${contactInfo.email}`}
               className="flex items-center gap-2 hover:text-teal-300 transition-colors"
             >
               <FaEnvelope />
-              <span>abdalghanidakkak@gmail.com</span>
+              <span>{contactInfo.email}</span>
             </a>
           </motion.div>
 
@@ -107,38 +140,17 @@ const Footer = () => {
           </motion.div>
 
           <motion.div variants={itemVariants} className="flex gap-8">
-            <a
-              href="https://github.com/Abdalghani-Dakkak"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <FaGithub size={28} />
-            </a>
-            <a
-              href="https://linkedin.com/in/abdalghani-dakkak"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <FaLinkedin size={28} />
-            </a>
-            <a
-              href="https://t.me/Abdalghanidakkak"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <FaTelegram size={28} />
-            </a>
-            <a
-              href="https://wa.me/963992528376"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <FaWhatsapp size={28} />
-            </a>
+            {socialMedia.map((social) => (
+              <a
+                key={social.id}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                {social.icon}
+              </a>
+            ))}
           </motion.div>
 
           <motion.p
