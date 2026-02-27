@@ -3,7 +3,7 @@ export const experience = [
     role: "Front-End Developer",
     company: "ATCC",
     location: "Kuwait, Kuwait (Remote)",
-    date: "Nov 2025 - Present",
+    date: "Nov 2025 - Feb 2026",
     projects: [
       "Tiny Closet",
       "Abby",
